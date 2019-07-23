@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_marcamodelo" inherit_id="sale.report_saleorder_document"> 
+        
+        
+        <xpath expr="//div[@t-if='doc.validity_date and doc.state in ['draft', 'sent']']//div[@class='text-left']" position="before">
+            <th  class="text-left">Marca</th> <!-- meto una condicional if para checar que si esta seleccionado el campo para saber si requiere ser impreso el modelo y marca  -->
+            <th  class="text-left">Modelo</th>         
+        </xpath>
+        
+    </template>
+</odoo>
+
